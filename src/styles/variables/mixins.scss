@@ -1,0 +1,30 @@
+// Background
+@mixin bg(
+  $imgpath,
+  $color: auto,
+  $size: 100%,
+  $position: center,
+  $repeat: no-repeat) {
+  background: {
+    color: $color;
+    image: url($imgpath);
+    position: $position;
+    repeat: $repeat;
+    size: $size;
+  }
+}
+
+// Breakpoints
+@mixin respond-to($media) {
+  @if $media == sm {
+    @media screen and (min-width: $screen-sm) { @content; }
+  } @else if $media == md {
+    @media screen and (min-width: $screen-md) { @content; }
+  } @else if $media == lg {
+    @media screen and (min-width: $screen-lg) { @content; }
+  } @else if $media == xl {
+    @media screen and (min-width: $screen-xl) { @content; }
+  } @else if $media == landscape {
+    @media screen and (orientation: $screen-landscape) { @content; }
+  }
+}

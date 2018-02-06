@@ -1,0 +1,1 @@
+# Constructor de Child Theme de WordPress

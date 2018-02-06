@@ -1,0 +1,34 @@
+// Colores
+$white: #fff;
+
+// Grid
+$columns: 12;
+$gutter-width: 1%;
+$gutter: 1em;
+$container: 100% - ($gutter-width * 2);
+$container-fluid: 100%;
+
+%placeholder {
+  ::-webkit-input-placeholder {
+    color: $white;
+  }
+
+  :-moz-placeholder {
+    color: $white;
+  }
+
+  ::-moz-placeholder {
+    color: $white;
+  }
+
+  :-ms-input-placeholder {
+    color: $white;
+  }
+}
+
+// Breakpoints
+$screen-sm: 576px;
+$screen-md: 768px;
+$screen-lg: 992px;
+$screen-xl: 1200px;
+$screen-landscape: landscape;
