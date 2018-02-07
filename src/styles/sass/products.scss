@@ -3,6 +3,7 @@
 .related {
 
   .hb-woo-product {
+    border: 1px solid $lightgray;
     margin: 1%;
     padding: 0;
 
@@ -15,7 +16,17 @@
     }
 
     &:hover {
-      border: 1px solid $lightgray;
+      border: 1px solid $color-principal;
+
+      img {
+        animation: ease;
+        transform: scale(1.2);
+        transition: all .7s ease;
+      }
+    }
+
+    img {
+      transition: all .7s ease;
     }
 
     &-details {
@@ -25,8 +36,13 @@
         font-weight: 600;
         letter-spacing: .5px;
         line-height: 20px;
+        min-height: 80px;
         padding: .5rem;
         text-align: justify;
+
+        &:hover {
+          color: $color-principal;
+        }
       }
 
       .woo-cats {
