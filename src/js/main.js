@@ -1,5 +1,5 @@
-import './js/vendors/modernizr.js'
-import './js/vendors/selectivizr.js'
+import './vendors/modernizr.js'
+import './vendors/selectivizr.js'
 
 (() => {
   'use strict'

@@ -31,7 +31,7 @@ var sassOptions = {
 }
 
 gulp.task('styles', () => {
-  return gulp.src('./src/main.scss')
+  return gulp.src('./src/styles/main.scss')
     .pipe(sassGlob())
     .pipe(sassLint())
     .pipe(sassLint.format())

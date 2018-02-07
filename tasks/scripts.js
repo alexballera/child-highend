@@ -9,7 +9,7 @@ import rename from 'gulp-rename'
 // Agregado presets y plugins en .babelrc o en package.json plugin: "transform-regenerator"
 
 gulp.task('scripts', () => {
-  return browserify('./src/main.js')
+  return browserify('./src/js/main.js')
     .transform(babelify)
     .bundle()
     .on('error', (err) => {
