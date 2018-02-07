@@ -1,0 +1,23 @@
+.woocommerce {
+
+  &-MyAccount-content {
+    p {
+      line-height: 20px;
+
+      &:first-child {
+        margin-bottom: .5rem;
+      }
+    }
+  }
+
+  &-Address {
+    &-title,
+    address {
+      margin-bottom: .5rem;
+    }
+
+    address {
+      font-style: italic;
+    }
+  }
+}
