@@ -1,0 +1,34 @@
+.single-product {
+  .breadcrumbs-wrapper {
+    display: none;
+  }
+
+  .summary {
+    .hb-heading {
+      font-weight: bolder;
+    }
+
+    .woocommerce-product-details__short-description {
+      p {
+        line-height: 24px;
+      }
+    }
+  }
+
+  .woocommerce-tabs {
+    .panel {
+      p {
+        line-height: 20px;
+        text-align: justify;
+      }
+
+      .upload_section {
+        input {
+          &[type='button'] {
+            padding: .3rem;
+          }
+        }
+      }
+    }
+  }
+}
