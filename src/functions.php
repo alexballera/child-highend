@@ -1,16 +1,15 @@
 <?php
 
-function highend_child_theme_enqueue_styles() {
+// Add Stylesheet - Scripts - Fonts
+require 'inc/enqueue-styles-scripts-fonts.php';
 
-    $parent_style = 'highend-parent-style';
+// Custom Admin
+require 'inc/custom-admin.php';
 
-    wp_enqueue_style( $parent_style, get_template_directory_uri() . '/style.css' );
+// WP Optimization
+require 'inc/wp-optimization.php';
 
-    wp_enqueue_style( 'highend-child-style',
-        get_stylesheet_directory_uri() . '/style.css',
-        array( $parent_style )
-    );
-}
-add_action( 'wp_enqueue_scripts', 'highend_child_theme_enqueue_styles' );
+// SWP Security
+require 'inc/wp-security.php';
 
 ?>
