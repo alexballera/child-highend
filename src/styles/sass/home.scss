@@ -1,19 +1,48 @@
 .home {
 
   .hb-woo-product {
+    margin: 1%;
+    padding: 0;
+
+    &.col-3 {
+      width: 24%;
+    }
+
     &:hover {
       border: 1px solid $lightgray;
     }
 
     &-details {
+      max-width: 100%;
+
       h3 {
         letter-spacing: .5px;
         line-height: 20px;
+        padding: .5rem;
+        text-align: justify;
       }
 
       .woo-cats {
+        display: none;
         margin-top: .5rem;
       }
+    }
+
+    .price {
+      color: red !important;
+      float: initial;
+      padding: .5rem;
+      position: initial;
+
+      del {
+        color: #999 !important;
+      }
+    }
+
+    .like-holder {
+      bottom: .5rem;
+      right: .5rem !important;
+      top: initial !important;
     }
   }
 }

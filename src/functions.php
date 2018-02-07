@@ -12,4 +12,6 @@ require 'inc/wp-optimization.php';
 // SWP Security
 require 'inc/wp-security.php';
 
+
+
 ?>
