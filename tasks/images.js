@@ -5,6 +5,7 @@ import pngquant from 'imagemin-pngquant'
 import imageminSvgo from 'imagemin-svgo'
 import imageminOptipng from 'imagemin-optipng'
 import imageminJpegtran from 'imagemin-jpegtran'
+import notify from 'gulp-notify'
 
 gulp.task('images', ['screenshot'], () => {
   return gulp.src('./src/images/**')
@@ -47,4 +48,5 @@ gulp.task('screenshot', () => {
       ]
     })))
     .pipe(gulp.dest('./public'))
+    .pipe(notify('PHP Files Changed!'))
 })

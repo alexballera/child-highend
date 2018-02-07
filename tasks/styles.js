@@ -22,7 +22,14 @@ var plumberOptions = {
 }
 
 var autoprefixerOptions = {
-  browsers: ['last 2 versions']
+  browsers: [
+    '> 1%',
+    'last 2 versions',
+    'IE 9',
+    'IE 10',
+    'IE 11'
+  ],
+  cascade: false
 }
 var sassOptions = {
   includePaths: [
@@ -43,4 +50,5 @@ gulp.task('styles', () => {
     .pipe(gulp.dest('./build'))
     .pipe(cssnano())
     .pipe(gulp.dest('./public'))
+    .pipe(notify('CSS Files Changed!'))
 })

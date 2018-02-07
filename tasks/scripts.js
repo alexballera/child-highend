@@ -5,6 +5,7 @@ import buffer from 'vinyl-buffer'
 import uglify from 'gulp-uglify'
 import babelify from 'babelify'
 import rename from 'gulp-rename'
+import notify from 'gulp-notify'
 
 // Agregado presets y plugins en .babelrc o en package.json plugin: "transform-regenerator"
 
@@ -23,4 +24,5 @@ gulp.task('scripts', () => {
     .pipe(uglify())
     .pipe(rename({ suffix: '.min' }))
     .pipe(gulp.dest('./public/js'))
+    .pipe(notify('JS Files Changed!'))
 })
